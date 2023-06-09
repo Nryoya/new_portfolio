@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "../components/Header/Index";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,7 +15,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className={inter.className}>
         <Header />
         <main className="h-screen flex justify-center items-center">
-          {children}
+          <section className="flex max-w-7xl mx-auto">{children}</section>
         </main>
       </body>
     </html>

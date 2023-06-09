@@ -10,8 +10,8 @@ const Header = () => {
   return (
     <header className="bg-purple-600 fixed w-screen">
       <div className="flex justify-between items-center max-w-7xl mx-auto py-3 px-6">
-      <Logo handleChange={setCurrentNav}/>
-      <Nav currentNav={currentNav} handleChange={setCurrentNav}/>
+        <Logo handleClick={setCurrentNav} />
+        <Nav currentNav={currentNav} handleClick={setCurrentNav} />
       </div>
     </header>
   );
