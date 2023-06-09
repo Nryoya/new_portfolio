@@ -15,7 +15,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="ja">
       <body className={inter.className}>
         <Header />
-        {children}</body>
+        <main className="h-screen flex justify-center items-center">
+          {children}
+        </main>
+      </body>
     </html>
   );
 };
