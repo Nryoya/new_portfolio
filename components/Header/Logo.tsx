@@ -4,7 +4,7 @@ interface Props {
   handleClick: (index: number) => void;
 }
 
-const Logo = ({ handleClick }: Props) => {
+const Logo = ({ handleClick }: Props): JSX.Element => {
   return (
     <h1>
       <Link
