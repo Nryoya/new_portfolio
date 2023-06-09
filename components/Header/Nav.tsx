@@ -2,18 +2,18 @@ import Link from "next/link";
 
 interface Props {
   currentNav: number;
-  handleChange: (index: number) => void;
+  handleClick: (index: number) => void;
 }
 
-const Nav = ({ currentNav, handleChange }: Props) => {
-  const nav: string[] = ["About", "Jobs", "Contact"];
+const Nav = ({ currentNav, handleClick }: Props) => {
+  const nav: string[] = ["About", "Works", "Contact"];
 
   return (
     <nav className="w-56">
       <ul className="flex justify-between w-full">
         {nav.map((navItem, index) => {
           return (
-            <li>
+            <li key={index}>
               <Link
                 className={
                   currentNav === index
@@ -22,7 +22,7 @@ const Nav = ({ currentNav, handleChange }: Props) => {
                 }
                 href={"/" + navItem}
                 key={index}
-                onClick={() => handleChange(index)}
+                onClick={() => handleClick(index)}
               >
                 {navItem}
               </Link>
