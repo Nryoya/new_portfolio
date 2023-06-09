@@ -5,7 +5,7 @@ interface Props {
   handleClick: (index: number) => void;
 }
 
-const Nav = ({ currentNav, handleClick }: Props) => {
+const Nav = ({ currentNav, handleClick }: Props): JSX.Element => {
   const nav: string[] = ["About", "Works", "Contact"];
 
   return (

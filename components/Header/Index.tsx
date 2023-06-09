@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import Logo from "./Logo";
 import { useState } from "react";
 
-const Header = () => {
+const Header = (): JSX.Element => {
   const [currentNav, setCurrentNav] = useState(-1);
 
   return (
