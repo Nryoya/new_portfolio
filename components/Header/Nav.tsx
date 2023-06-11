@@ -17,8 +17,8 @@ const Nav = ({ currentNav, handleClick }: Props): JSX.Element => {
               <Link
                 className={
                   currentNav === index
-                    ? "border-b-2 border-white text-white py-4"
-                    : "hover:text-white  transition duration-100 text-purple-900 tracking-wide py-4"
+                    ? "border-b-2 border-white text-white tracking-wide py-4"
+                    : "hover:text-white transition duration-100 text-purple-900 tracking-wide py-4"
                 }
                 href={"/" + navItem}
                 key={index}

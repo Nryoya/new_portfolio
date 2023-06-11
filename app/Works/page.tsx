@@ -13,7 +13,7 @@ const WorksPage = (): JSX.Element => {
   ];
   return (
     <div className="overflow-x-scroll py-8">
-      <h3 className="text-6xl my-5 px-6 bg-gradient-to-r from-purple-600 to-purple-400 inline-block text-transparent bg-clip-text">Works</h3>
+      <h3 className="text-6xl my-2 px-6 bg-gradient-to-r from-purple-600 to-purple-400 inline-block text-transparent bg-clip-text">Works</h3>
       <div className="flex justify-around w-screen px-6">
         {imgArr.map((item) => {
           return (
